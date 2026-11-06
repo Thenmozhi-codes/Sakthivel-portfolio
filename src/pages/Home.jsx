@@ -71,7 +71,7 @@ export function Create(){
   const T=[['Create','Concepts, scripts and lighting set up around your brand story.','n3'],['Capture','Cinema cameras, gimbals and drone shots on location or in studio.','n4'],['Convert','Edits, grades and cut-downs made to turn views into customers.','n10']];
   const [a,setA]=useState(0);
   return (<section className="dark"><div className="curve"></div><div className="wrap">
-    <div><div className="tabs">{T.map((t,i)=>(<div key={i} className={'tab'+(a===i?' on':'')} onMouseEnter={()=>setA(i)} onClick={()=>setA(i)} data-h style={{fontSize:'clamp(54px,9vw,128px)',lineHeight:.95}}>{t[0]}.</div>))}</div>
+    <div><div className="tabs">{T.map((t,i)=>(<div key={i} className={'tab'+(a===i?' on':'')} onMouseEnter={()=>setA(i)} onClick={()=>setA(i)} data-h style={{fontSize:'clamp(54px,6vw,128px)',lineHeight:.95}}>{t[0]}.</div>))}</div>
       <p className="sub">End-to-end visual production for modern brands.</p></div>
     <div className="rig2" onMouseMove={tilt} onMouseLeave={untilt}><div className="rg" key={a}><Panel i={a+1} k={T[a][2]}/></div><p key={'p'+a} style={{animation:'pop .6s both'}}>{T[a][1]}</p></div>
   </div></section>);

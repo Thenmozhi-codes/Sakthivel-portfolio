@@ -21,7 +21,7 @@ section{min-height:100vh;position:relative;overflow:hidden;padding:130px 6vw 80p
 .dark{background:var(--ink);color:#fff}.light{background:var(--paper);color:var(--ink)}
 .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:4vw;align-items:center;width:100%;max-width:1300px;margin:0 auto}
 @media(max-width:860px){.wrap{grid-template-columns:1fr}}
-h2{font-size:clamp(54px,9vw,138px)}
+h2{font-size:clamp(20px, 5vw, 120px)}
 .ch{display:inline-block;transition:transform .3s cubic-bezier(.3,1.6,.5,1),color .2s}
 .ch:hover{transform:translateY(-14px) rotate(-6deg);color:var(--lime)}
 .light .ch:hover{color:var(--lime-d)}
